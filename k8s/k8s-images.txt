@@ -1,0 +1,23 @@
+docker pull anjia0532/google-containers.kube-controller-manager-amd64:v1.12.0
+docker pull anjia0532/google-containers.kube-apiserver-amd64:v1.12.0
+docker pull anjia0532/google-containers.kube-scheduler-amd64:v1.12.0
+docker pull anjia0532/google-containers.kube-proxy-amd64:v1.12.0
+docker pull anjia0532/google-containers.pause:3.1
+docker pull anjia0532/google-containers.etcd-amd64:3.2.24
+docker pull anjia0532/google-containers.coredns:1.2.2
+
+docker tag anjia0532/google-containers.kube-controller-manager-amd64:v1.12.0 k8s.gcr.io/kube-controller-manager-amd64:v1.12.0
+docker tag anjia0532/google-containers.kube-apiserver-amd64:v1.12.0 k8s.gcr.io/kube-apiserver-amd64:v1.12.0
+docker tag anjia0532/google-containers.kube-scheduler-amd64:v1.12.0 k8s.gcr.io/kube-scheduler-amd64:v1.12.0
+docker tag anjia0532/google-containers.kube-proxy-amd64:v1.12.0 k8s.gcr.io/kube-proxy-amd64:v1.12.0
+docker tag anjia0532/google-containers.pause:3.1 k8s.gcr.io/pause:3.1
+docker tag anjia0532/google-containers.etcd-amd64:3.2.24 k8s.gcr.io/etcd-amd64:3.2.24
+docker tag anjia0532/google-containers.coredns:1.2.2 k8s.gcr.io/coredns:1.2.2
+
+docker rmi anjia0532/google-containers.kube-controller-manager-amd64:v1.12.0
+docker rmi anjia0532/google-containers.kube-apiserver-amd64:v1.12.0
+docker rmi anjia0532/google-containers.kube-scheduler-amd64:v1.12.0
+docker rmi anjia0532/google-containers.kube-proxy-amd64:v1.12.0
+docker rmi anjia0532/google-containers.pause:3.1
+docker rmi anjia0532/google-containers.etcd-amd64:3.2.24
+docker rmi anjia0532/google-containers.coredns:1.2.2
