@@ -35,3 +35,15 @@
 ```
 设置一个进程能打开的最大连接数(并发数)
 ```
+
+## location 优先级
+
+1. 精确匹配 `=` 
+
+2. 优先级匹配  `^~`
+
+3. 正则匹配 `~ and  ~*`
+
+4. 前缀匹配 （**无修饰符**）
+
+   ![](C:\Users\Administrator\Pictures\nginx-location优先级.png)
